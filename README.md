@@ -4,6 +4,6 @@
 
 This launches the TurtleBot3 within a designated namespace.
 
-The namespace is retrieved from the environment variable `MRS_ROS_NAMESPACE`.
+The namespace is retrieved from the environment variable `MRS_ROS_NAMESPACE` and has the form `turtlebot_XX_XX_XX` where `XX_XX_XX` are the last three octets of the MAC address.
 
-This can be set to the same as the hostname by running the script `setup.sh`. (This will write it to `bashrc` which then **must** be sourced.)
+The script `setup.sh` has to be run before the package can be used. (This will write it to `bashrc` which then **must** be sourced.)
