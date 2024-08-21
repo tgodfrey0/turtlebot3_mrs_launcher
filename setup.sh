@@ -4,3 +4,4 @@ echo "Please source ~/.bashrc"
 
 cp param/$TURTLEBOT3_MODEL.yaml param/$TURTLEBOT3_MODEL.old.yaml
 sed -i 's/<<MRS_ROS_NAMESPACE>>/'"$NAMESPACE"'/g' param/$TURTLEBOT3_MODEL.yaml
+ 
