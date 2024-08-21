@@ -1,4 +1,4 @@
-turtlebot_d3_21_93:
+<<MRS_ROS_NAMESPACE>>:
   turtlebot3_node:
     ros__parameters:
 
@@ -25,7 +25,7 @@ turtlebot_d3_21_93:
         ir: 0
         sonar: 0
 
-turtlebot_d3_21_93:
+<<MRS_ROS_NAMESPACE>>:
   diff_drive_controller:
     ros__parameters:
 
