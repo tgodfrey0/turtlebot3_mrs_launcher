@@ -8,4 +8,6 @@ The namespace is retrieved from the environment variable `MRS_ROS_NAMESPACE` and
 
 The script `setup.sh` has to be run before the package can be used. (This will write it to `bashrc` which then **must** be sourced.)
 
+*Update:* the latest version can also get the MAC address in Python so does not rely on the `MRS_ROS_NAMESPACE` environment variable.
+
 The package can be built like any other ROS2 package using `colcon build`.
