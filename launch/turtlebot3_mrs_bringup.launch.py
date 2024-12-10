@@ -28,8 +28,7 @@ from launch.substitutions import LaunchConfiguration
 from launch.substitutions import ThisLaunchFileDir
 from launch_ros.actions import Node
 
-ns = os.environ.get("MRS_ROS_NAMESPACE", f"turtlebot_{'_'.join((['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,48,8)][::-1])[3:6])}")
-assert ns is not None
+ns = f"turtlebot3_{'_'.join((['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,48,8)][::-1])[3:6])}" # Each robot's namespace is the last 3 octets of its MAC address
 
 def generate_launch_description():
     TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
